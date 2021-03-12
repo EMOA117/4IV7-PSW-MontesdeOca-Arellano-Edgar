@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     color: black;
-    text-align: center;
 }
 
 html, body{
@@ -15,8 +14,12 @@ html, body{
     margin: 1rem;
     background-color: #2F6690;
 }
+nav{
+    text-align: center;
+    font: 22px sans-serif;
+}
 
-nav, section, footer,  aside{
+nav, section, footer, aside{
     border: 3px solid #16425B;
     margin: 1rem;
     border-radius: 10px;
@@ -24,13 +27,26 @@ nav, section, footer,  aside{
 }
 
 aside{
+    text-align: left;
+    font: 19px sans-serif;
+    width: 50%;
+    display: inline-block;
+    height: 160px;
+    background-color: #D9DCD6;
+}
+
+article{
+    text-align: center;
     width: 40%;
     display: inline-block;
-    height: 300px;
-    background-color: #D9DCD6;
-
+    height: 150px;
 }
 
 nav, section, footer{
     background-color: #81C3D7;
+}
+h2{
+    text-align: center;
+    font: 22px sans-serif;
+    font-style: oblique;
 }
