@@ -5,7 +5,7 @@
 }
 
 html, body{
-    background-color: #D9DCD6;
+    background-color: #E6EBE0;
 }
 
 .main-container{
@@ -32,7 +32,7 @@ aside{
     width: 50%;
     display: inline-block;
     height: 160px;
-    background-color: #D9DCD6;
+    background-color: #81C3D7;
 }
 
 article{
@@ -43,7 +43,7 @@ article{
 }
 
 nav, section, footer{
-    background-color: #81C3D7;
+    background-color: #E6EBE0 ;
 }
 h2{
     text-align: center;
@@ -55,4 +55,7 @@ ul{
 }
 footer{
     font: 10px sans-serif;
+}
+img{
+    border: 8px solid #16425B;
 }
