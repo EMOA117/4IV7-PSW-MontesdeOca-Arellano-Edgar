@@ -20,7 +20,8 @@
             <div class="problema-content" >
                 <input type="text" class="problema-input" 
                 placeholder="Ingresa las palabras separadas por un espacio"
-                id="p1-input">
+                id="p1-input"
+                style="text-transform:uppercase;" value=""  onkeyup="javascript:this.value=this.value.toUpperCase();">
                 <button type="button" class="problema-button"
                 style="margin-top: 1rem;" onclick="problema1()" >Invertir</button>
                 <pre class="problema-output"
@@ -156,7 +157,7 @@
                 Dada una lista de palabras, encontrar la palabra que mas numero
                 de caracteres unicos tenga.
                 <br>
-                Ejempplo: CASA = 3 (c, a, s)   PERRO = 4 (p, e, r, o)
+                Ejemplo: CASA = 3 (c, a, s)   PERRO = 4 (p, e, r, o)
                 <br>
                 Considera solamente un alfabeto de la A-Z en mayusculas. 
                 <br>
@@ -166,7 +167,8 @@
             <div class="problema-content" >
                 <input type="text" class="problema-input" 
                 placeholder="Ingresa las palabras separadas por una coma"
-                id="p3-input">
+                id="p3-input"
+                style="text-transform:uppercase;" value=""  onkeyup="javascript:this.value=this.value.toUpperCase();">
                 <button type="button" class="problema-button"
                 style="margin-top: 1rem;" onclick="problema3()" >Calcular</button>
                 <pre class="problema-output"
@@ -176,5 +178,8 @@
         </div>
     </div>
     <script src="js/algoritmia.js"></script>
+    <footer>
+        <a href="Index.html">Regresar al menú</a>
+    </footer>
 </body>
 </html>
