@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina de Registro</title>
+        <script src="js/validaciones.js" ></script>
+        <link rel="stylesheet" href="css/Estilo.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container" >
+            <h1>Registro de usuario</h1>
+            <br>
+            <form name="formulario" method="post"  
+                  action="Registro">
+                <label>Nombre:</label>
+                <input type="text" name="nombre"  >
+                <br>
+                <label>Apellido Paterno:</label>
+                <input type="text" name="appat"  >
+                <br>
+                <label>Apellido Materno:</label>
+                <input type="text" name="appmat"  >
+                <br>
+                <label>Edad:</label>
+                <input type="number" name="edad" min="01" max="99" 
+                       size="2"  >
+                <br>
+                <label>Correo:</label>
+                <input type="email" name="email"  >
+                <br>
+                <input type="submit" value="Enviar Datos de Registro" onclick="Validar()">
+                <input type="reset" value="Borrar Registro">
+            </form>
+        </div>
+        <br>
+        <div class="contendorConsultar">
+             <h1>Consulta de usuarios</h1>
+            <br>
+            <form method="get" name="formularioconsultar" action="Consultar">
+                <input type="submit" value="Consultar Tabla General de Usuarios" >
+            </form>
+        </div>
+        <br>
+        <div class="contenedorEliminar" >
+             <h1>Eliminación de usuario</h1>
+            <br>
+            <form method="post" name="formularioeliminar" action="Eliminar">
+                <label>Ingresa el ID del usuario que deseas eliminar</label>
+                <input type="number" name="ideliminar" >
+                <input type="submit" value="Eliminar Usuario" onclick="ValidarE()" >
+            </form>
+        </div>
+        <br>
+        <div class="contenedorActualizar" >
+             <h1>Actualización de usuario</h1>
+             <br>
+            <form name="formularioactualizar" method="post"  
+                  action="Editar">
+                <label>
+                Para modificar a un usuario por favor ingrese en el campo Número de operación el  Número de la operación a realizar</label>
+                <br>
+                <h3>Número de Operaciones</h3>
+                <ul class="Lista">
+                        <li>1-Editar Nombre</li>
+                        <li>2-Editar Apellido Paterno</li>
+                        <li>3-Editar Apellido Materno</li>
+                        <li>4-Editar Edad</li>
+                        <li>5-Editar Correo</li>
+                        <li>6-Editar TODOS los datos</li>
+                </ul>
+                <label>Selecciona el Número de operación</label>
+                <br>
+                <input type="radio" name="Noperacion" value="1">1
+                <input type="radio" name="Noperacion" value="2">2
+                <input type="radio" name="Noperacion" value="3">3
+                <input type="radio" name="Noperacion" value="4">4
+                <input type="radio" name="Noperacion" value="5">5
+                <input type="radio" name="Noperacion" value="6">6
+                <br>
+                <label>Ingresa el ID del usuario a modificar</label>
+                <input type="number" name="ideditar" >
+                <br>
+                <label>Ingresa el Nombre</label>
+                <input type="text" name="nombreN" >
+                 <br>
+                <label>Ingresa el Apellido Paterno</label>
+                <input type="text" name="appatN" >
+                 <br>
+                <label>Ingresa el Apellido Materno</label>
+                <input type="text" name="appmatN" >
+                 <br>
+                <label>Ingresa la Edad</label>
+                <input type="text" name="edadN" >
+                 <br>
+                <label>Ingresa el Correo Electrónico</label>
+                <input type="text" name="correoN" >
+                <br>
+                 <input type="submit" value="Editar Usuario" onclick="ValidarED()">
+            </form>
+        </div>
+    </body>
+</html>
